@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Horarios</title>
+    <link rel="stylesheet" href="visor.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Administrador y Seleccionador de Horarios</h1>
+        </header>
+
+        <main>
+            <div class="controls">
+                <label for="grade-select">Selecciona un Grado:</label>
+                <select id="grade-select">
+                    <option value="">-- Seleccionar --</option>
+                    <option value="1">1ro</option>
+                    <option value="2">2do</option>
+                    <option value="3">3ro</option>
+                    <option value="4">4to</option>
+                    <option value="5">5to</option>
+                    <option value="6">6to</option>
+                </select>
+                <select id="section-select" disabled>
+                    <option value="">-- Selecciona una Sección --</option>
+                </select>
+            </div>
+
+            <div id="schedule-display" class="schedule-display">
+                <p class="placeholder-text">Por favor, selecciona un grado y una sección para ver el horario.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="visor.js"></script>
+</body>
+</html>
